@@ -1,0 +1,27 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    background-color: rgb(226, 157, 157);
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datos p {
+    margin: 5px;
+}
+
+.operaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.operaciones p {
+    margin: 5px;
+}
