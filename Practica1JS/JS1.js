@@ -130,15 +130,16 @@ for (let i = 1; i <= num; i++) {
 document.write(impresion) */
 
 //16. Escribir un programa que escriba en pantalla los divisores comunes de dos números dados
-let num1 = Number(prompt("Ingrese un numero"))
+/* let num1 = Number(prompt("Ingrese un numero"))
 let num2 = Number(prompt("Ingrese un segundo numero"))
+let menor = Math.min(num1, num2)
 let impresion = "Los divisores comunes de " + num1 + " y " + num2 + " son : "
 
-for (let i = 1; i <= num; i++) {
-    if (num % i === 0) {
+for (let i = 1; i <= menor; i++) {
+    if (num1 % i === 0 && num2 % i === 0) {
         impresion += i + " "
     }
 }
 
-document.write(impresion)
+document.write(impresion) */
 
