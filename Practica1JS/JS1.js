@@ -143,3 +143,118 @@ for (let i = 1; i <= menor; i++) {
 
 document.write(impresion) */
 
+//17. Escribir un programa que nos diga si un número dado es primo (no es divisible por ninguno otro número que no sea él mismo o uno) 
+/* let num = Number(prompt("Ingrese un numero"))
+let esPrimo = true;
+
+if (num != 1) {
+    for (let i = 2; i <= num - 1; i++) {
+        if (num % i === 0) {
+            esPrimo = false
+        }
+    }
+} else {
+    esPrimo = false
+}
+
+if (esPrimo === true) {
+    document.write("El numero " + num + " es primo")
+} else {
+    document.write("El numero " + num + " NO es primo")
+}  */
+
+//18. Pide la edad y si es mayor de 18 años indica que ya puede conducir
+/* let edad = Number(prompt("Ingrese su edad"))
+let esMayor = true
+
+if (edad<18) {
+    esMayor = false
+}
+
+if (esMayor === true) {
+    alert("Usted esta habilitado para conducir")
+} else {
+    alert("Usted NO esta habilitado para conducir")
+}  */
+
+/*19. Pide una nota (número). Muestra la calificación según la nota:
+● 0-3: Muy deficiente
+● 3-5: Insuficiente
+● 5-6: Suficiente
+● 6-7: Bien
+● 7-9: Notable
+● 9-10: Sobresaliente */
+/* let nota
+
+do{
+    nota = Number(prompt("Ingrese su nota"))
+
+    switch (true) {
+        case (nota >= 0 && nota < 3):
+            alert("Muy deficiente");
+            break;
+        case (nota >= 3 && nota < 5):
+            alert("Insuficiente");
+            break;
+        case (nota >= 5 && nota < 6):
+            alert("Suficiente");
+            break;
+        case (nota >= 6 && nota < 7):
+            alert("Bien");
+            break;
+        case (nota >= 7 && nota < 9):
+            alert("Notable");
+            break;
+        case (nota >= 9 && nota <= 10):
+            alert("Sobresaliente");
+            break;
+        default:
+            alert("Ingrese un numero entre 0 y 10");
+    }
+} while (nota < 0 || nota > 10) */
+
+/* 20. Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
+salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión */
+/* let texto
+let concat = ""
+
+while (true) {
+    texto = prompt("Introduce una cadena de texto (presione cancelar para finalizar")
+
+    if (texto === null) {
+        break
+    }
+
+    if (concat !== "") {
+        concat = concat + " - " + texto
+    } else {
+        concat = texto
+    }
+
+}
+
+alert(concat) */
+
+/* 21. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
+número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar”
+deberá indicarse la suma total de los números introducidos. */
+let num
+let suma = 0
+
+while (true) {
+    num = prompt("Introduce un numero (presione cancelar para finalizar")
+
+    if (num === null) {
+        break
+    }
+
+    num = Number(num)
+
+    if (isNaN(num)) {
+        alert("Lo que introdujo no es numero")
+    } else {
+        suma += numero
+    }
+}
+
+document.write(suma)
