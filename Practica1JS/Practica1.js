@@ -238,11 +238,11 @@ alert(concat) */
 /* 21. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
 número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar”
 deberá indicarse la suma total de los números introducidos. */
-let num
+/* let num
 let suma = 0
 
 while (true) {
-    num = prompt("Introduce un numero (presione cancelar para finalizar")
+    num = prompt("Introduce un numero (presione cancelar para finalizar)")
 
     if (num === null) {
         break
@@ -253,8 +253,8 @@ while (true) {
     if (isNaN(num)) {
         alert("Lo que introdujo no es numero")
     } else {
-        suma += numero
+        suma += num
     }
 }
 
-document.write(suma)
+alert("La suma de los numeros que introdujo es: " + suma) */
